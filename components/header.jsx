@@ -1,10 +1,11 @@
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
   return (
-    <header className='container'>
+    <header className='container mx-auto'>
       <nav className='py-6 px-4 flex justify-between items-center'>
         <Link href={"/"}>
         <Image
@@ -14,6 +15,12 @@ const Header = () => {
 
         <div className='flex items-center gap-4'>
             {/* login and other cts */}
+            <SignedOut>
+              <SignInButton />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
         </div>
       </nav>
     </header>

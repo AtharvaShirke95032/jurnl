@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Force override Clerk avatar size */
+.clerk-avatarBox {
+  width: 2.5rem !important; /* 10 * 0.25rem = 2.5rem */
+  height: 2.5rem !important;
+}
+
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

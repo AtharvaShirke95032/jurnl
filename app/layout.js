@@ -27,9 +27,9 @@ export default function RootLayout({ children }) {
             <p>made with 💗 by Cat3eow</p>
           </div>
         </footer>
-        </ClerkProvider>
+         </ClerkProvider>
       </body>
     </html>
-    
+   
   );
 }

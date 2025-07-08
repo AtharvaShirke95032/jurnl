@@ -2,10 +2,13 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { Button } from './ui/button'
+import { FolderOpen, PenBox } from 'lucide-react'
+import UserMenu from './user-menu.jsx'
 
 const Header = () => {
   return (
-    <header className='container mx-auto'>
+    <header className='container mx-auto max-w-full '>
       <nav className='py-6 px-4 flex justify-between items-center'>
         <Link href={"/"}>
         <Image
@@ -13,14 +16,32 @@ const Header = () => {
         />
         </Link>
 
-        <div className='flex items-center gap-4'>
-            {/* login and other cts */}
-            <SignedOut>
-              <SignInButton />
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
+        <div className='flex items-center gap-4 '>
+            <SignedIn >
+              <Link href="/dashboard#collections">
+            <Button variant="outline" className="flex items-center gap-2">
+              <FolderOpen size={18}/>
+             <span className='hidden md:inline'>Collections</span> 
+              </Button>
+            </Link>
             </SignedIn>
+
+            <Link href="/journal/write">
+            <Button variant="journal" className="flex items-center gap-2">
+              <PenBox size={18}/>
+             <span className='hidden md:inline'>Write new</span> 
+              </Button>
+            </Link>
+            <SignedOut>
+              <SignInButton forceRedirectUrl="/dashboard">
+                <Button variant="outline">Login</Button>
+              </SignInButton>
+            </SignedOut>
+
+            <SignedIn>
+             <UserMenu/>
+            </SignedIn>
+          
         </div>
       </nav>
     </header>

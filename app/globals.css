@@ -3,8 +3,8 @@
 
 /* Force override Clerk avatar size */
 .clerk-avatarBox {
-  width: 0 !important; /* 10 * 0.25rem = 2.5rem */
-  height: 0 !important;
+  width: 2.5rem !important; /* 10 * 0.25rem = 2.5rem */
+  height: 2.5rem !important;
 }
 
 

@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
    
     <html lang="en">
-      <body className={`${inter.className} `}>
+      <body className={`${inter.className}`}>
          <ClerkProvider>
         <div className="bg-[url('/bg.jpg')] opacity-50 fixed -z-10 inset-0"/>
         <Header/>

@@ -4,7 +4,11 @@ import "./globals.css";
 import Header from "@/components/header";
 import { ClerkProvider } from '@clerk/nextjs';
 
-const inter = Inter({subset:["latin"]})
+
+const inter = Inter({
+  subsets: ["latin"], // ✅ Add this line
+  preload: true,      // optional, but defaults to true
+});
 
 export const metadata = {
   title: "Journel", 

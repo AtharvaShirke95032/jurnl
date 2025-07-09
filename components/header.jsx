@@ -15,11 +15,11 @@ async function Header() {
       <nav className="py-6 px-4 flex justify-between items-center">
         <Link href="/">
           <Image
-            src={"/logo.png"}
-            alt="Reflct Logo"
-            width={200}
-            height={60}
-            className="h-10 w-auto object-contain"
+            src="/logo1.png"
+            alt="jurnl Logo"
+            width={100} 
+            height={100}
+            className="object-contain"
           />
         </Link>
         <div className="flex items-center gap-4">

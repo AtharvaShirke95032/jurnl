@@ -36,7 +36,7 @@ export default async function Home () {
     <div className="relative container mx-auto px-4 pt-16 pb-16">
       <div className="max-w-5xl mx-auto text-center space-y-8">
         <h1 className="text-5xl md:text-7xl lg:text-8xl gradient-title mb-6">
-          Your Space to Reflect. <br /> Your Story to Tell.
+          Your Space to Journal. <br /> Your Story to Tell.
         </h1>
         <p className="text-lg md:text-xl text-orange-800 mb-8">
           Capture your thoughts, track your moods, and reflect on your journey
@@ -205,7 +205,7 @@ export default async function Home () {
         <Card className="bg-gradient-to-r from-orange-100 to-amber-100">
           <CardContent className="p-12 text-center">
             <h2 className="text-3xl font-bold text-orange-900 mb-6">
-              Start Reflct-ing on Your Journey Today
+              Start Documenting on Your Journey Today
             </h2>
             <p className="text-lg text-orange-700 mb-8 max-w-2xl mx-auto">
               Join thousands of writers who have already discovered the power of
